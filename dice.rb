@@ -4,7 +4,10 @@ require "sinatra"
 require "sinatra/reloader"
 
 get("/") do
-  "Hello, world!"
+  "<h1>Dice Roll</h1>
+  <ul>
+    <li><a href=/zebra>Test Zebra</a></li>
+  </ul>"
 end
 
 get("/zebra") do
