@@ -40,7 +40,7 @@ end
 get("/dice/1/20") do
 die = rand(1..20)
 
-outcome = "You rolled a #{dice} for a total of #{die}"
+outcome = "You rolled a #{die} for a total of #{die}"
 
 "<h1>1d20</h1>
   <p>#{outcome}</p>"
