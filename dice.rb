@@ -17,7 +17,8 @@ get("/") do
     <li><a href=\"/dice/2/10\">Roll two 10-sided dice</a></li>
     <li><a href=\"/dice/1/20\">Roll one 20-sided die</a></li>
     <li><a href=\"/dice/5/4\">Roll five 4-sided dice</a></li>
-  </ul>"
+  </ul>
+  "
 end
 
 get("/zebra") do
@@ -53,7 +54,7 @@ end
 get("/dice/1/20") do
 die = rand(1..20)
 
-outcome = "You rolled a #{die} for a total of #{die}"
+outcome = "You rolled a #{die} for a total of #{die}."
 
 "<h1>1d20</h1>
   <p>#{outcome}</p>"
