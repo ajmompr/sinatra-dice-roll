@@ -28,7 +28,7 @@ get("/dice/2/6") do
 
   @outcome = "You rolled a #{first_die} and a #{second_die} for a total of #{sum}."
   
-  erb(:two_six, { :layout => :wrapper})
+  erb(:two_six, { :layout => :wrapper })
 end
 
 get("/dice/2/10") do
@@ -38,7 +38,7 @@ get("/dice/2/10") do
 
   @outcome = "You rolled a #{first_die} and a #{second_die} for a total of #{sum}."
 
-  erb(:two_ten, { :layout => :wrapper})
+  erb(:two_ten, { :layout => :wrapper })
 end
 
 get("/dice/1/20") do
@@ -46,7 +46,7 @@ get("/dice/1/20") do
 
   @outcome = "You rolled a #{die} for a total of #{die}."
  
-  erb(:one_twenty)
+  erb(:one_twenty, { :layout => :wrapper })
 end 
 
 
